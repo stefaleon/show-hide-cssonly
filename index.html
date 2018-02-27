@@ -18,12 +18,19 @@
   </head>
   <body>
     <navbar>
-      <span><a href="#main-id">main</a></span>
+      <span><a href="#main-id" id="main-anchor">main</a></span>
       <span><a href="#id1">page 1</a></span>
       <span><a href="#id2">page 2</a></span>
     </navbar>
     <div class="main-page hideshow" id="main-id"> this is main </div>
     <div class="page1 hideshow" id="id1"> this is 1 </div>
     <div class="page2 hideshow" id="id2"> this is 2 </div>
+
+    <script type="text/javascript">
+      // trigger a click on the main anchor so that the main page is displayed on startup
+      (document.getElementById('main-anchor')).click();
+    </script>
+
+
   </body>
 </html>
